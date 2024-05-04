@@ -1,17 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c809bfe13.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
+    <link rel="stylesheet" href="./styles/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header></header>
     <main>
-       <div>
-        <form action="">
-            
+        <i class="fa-solid fa-paint-roller fa-bounce" style="color: #032239;"></i><h1>Pintureria Siete Colores</h1>
+        <h2>Contactanos con nosotros para recibir novedades!</h2>
+       <div class="form">
+        <form action="" class="formulario">
+            <h3>Por favor rellena este formulario</h3>
+        <div class="elementos">
+            <label for="">Nombre: </label> <input type="text" placeholder="Escribe tu nombre">
+            <label for="">Apellido: </label><input type="text" placeholder="Escribe tu apellido">
+            <label for="">Email: </label> <input type="email" placeholder="@email">
+            <label for="">Selecciona tu ciudad: </label><select name="ciudad" id=""><option value="1">Buenos Aires</option>
+            <option value="2">San Juan</option>
+            <option value="3">Cordoba</option>
+            <option value="4">Salta</option>
+            <option value="5">Tierra del Fuego</option>
+            <option value="6">Entre Rios</option>
+            <option value="7">Rosario</option>
+            <option value="8">Chubut</option>
+            </select> 
+        </div>
+            <h4>Deseo Recibir Novedades y Ofertas</h4>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Si</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">No</label>
+              </div>
+              <div>
+                <label for="">Comentarios: </label>
+                <textarea name="" id="" cols="30" rows="10"placeholder="deja tu comentario"></textarea>
+              </div>
+
+              <button class="button">Enviar</button>
         </form>
+            
        </div> 
     </main>
     <footer></footer>
