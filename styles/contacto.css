@@ -1,0 +1,32 @@
+main{
+    background-color: rgb(221, 133, 10);
+    border: none;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+h1{
+    text-align: center;
+    
+}
+.formulario{
+    border: 4px solid;
+    align-items: center;
+    min-width: 50%;
+    min-height: 50%;
+    padding: auto;
+
+}
+
+.elementos{
+    text-align: center;
+    align-items: center;
+    
+}
+
+input.formulario{
+    
+    display: flex;
+    align-items: flex-end;
+    padding: 3%;
+}
