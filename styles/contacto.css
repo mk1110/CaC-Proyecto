@@ -1,3 +1,20 @@
+.barra{
+    display: flex;
+    background-image: url(/img/images.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: ghostwhite;
+    text-align: center;
+    
+}
+.menu{
+    
+    display: flex;
+    align-items: end;
+    position:sticky;
+    width: 100%;
+    height: 100%;
+}
 main{
     background-color: rgb(221, 133, 10);
     border: none;
@@ -30,3 +47,5 @@ input.formulario{
     align-items: flex-end;
     padding: 3%;
 }
+
+
