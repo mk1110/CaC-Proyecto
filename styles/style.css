@@ -30,7 +30,7 @@ nav{
 
 
 #banner{
-    background-image: url("../img/images.jpeg");
+    background-image: url("../img/pintureria\ siete\ colores\ \(1\).png");
     background-size: cover;
     height: 550px;
     background-position: center;
@@ -73,11 +73,12 @@ nav{
     max-height: 100%;
     transition: bottom 0.5s ease-in-out;
 }
-.product-text{
+a .product-text{
     color: black;
     margin: 5px 0px 0px 0px;
     line-height: 1.2em;
     text-align: center;
+    text-decoration: none;
 }
 .contenedor:hover{
     opacity: 0.6;
