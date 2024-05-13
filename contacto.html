@@ -46,21 +46,24 @@
       </section>
       <h2>Contactate con nosotros para recibir novedades!</h2>
       <div class="form">
-        <form action="" class="formulario">
+        <form action="" class="formulario" id="formRegister">
           <h3>Por favor rellena este formulario</h3>
           <div class="elementos">
             <div class="campo">
-              <label for="">Nombre: </label>
-              <input type="text" placeholder="Escribe tu nombre" />
+              <label for="Nombre">Nombre: </label>
+              <input type="text" placeholder="Escribe tu nombre" id="nom" />
             </div>
+            <div class="error" id="error-nom"></div>
             <div class="campo">
-              <label for="">Apellido: </label
-              ><input type="text" placeholder="Escribe tu apellido" />
+              <label for="Apellido">Apellido: </label
+              ><input type="text" placeholder="Escribe tu apellido" id="ap"/>
             </div>
+            <div class="error" id="error-ap"></div>
             <div class="campo">
-              <label for="">Email: </label>
-              <input type="email" placeholder="@email" />
+              <label for="Email" >Email: </label>
+              <input type="email" placeholder="@email" id="email" />
             </div>
+            <div class="error" id="error-em"></div>
             <div class="campo">
               <label for="">Selecciona tu ciudad: </label
               ><select name="ciudad" id="">
@@ -101,11 +104,12 @@
             <textarea placeholder="deja tu comentario"></textarea>
           </div>
           <div>
-            <input class="button" type="submit" value="Enviar" />
+            <input class="button" onclick="EnviarFor()" type="submit" value="Enviar" />
           </div>
         </form>
       </div>
     </main>
+    <script src="validacion.js"></script>
   <footer>
       <a href="#">Encontranos en Argerich 4324, C.A.B.A., Argentina de Lunes a Viernes de 8.30 a 17.00.</a>
   </footer>
