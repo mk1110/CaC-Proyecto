@@ -36,3 +36,18 @@ const validarFormulario= (evento) => {
 formularioRegistro.addEventListener('submit',validarFormulario);
 
 
+function datosClientes(){
+    let cliente = {
+        nombre: document.getElementById("nom").value,
+        apellido: document.getElementById("ap").value,
+        email: document.getElementById("email").value,
+        ciudad: document.getElementById("city").value,
+        check: document.getElementById("check").checked,
+        mensaje: document.getElementById("msj").value
+    }
+    console.log(cliente);
+
+
+}
+
+

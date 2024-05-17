@@ -44,6 +44,7 @@
             style="color: #edeff0"></i>Pintureria Siete Colores
         </h1>
       </section>
+      
       <h2>Contactate con nosotros para recibir novedades!</h2>
       <div class="form">
         <form action="" class="formulario" id="formRegister">
@@ -66,47 +67,35 @@
             <div class="error" id="error-em"></div>
             <div class="campo">
               <label for="">Selecciona tu ciudad: </label
-              ><select name="ciudad" id="">
-                <option value="1">Buenos Aires</option>
-                <option value="2">San Juan</option>
-                <option value="3">Cordoba</option>
-                <option value="4">Salta</option>
-                <option value="5">Tierra del Fuego</option>
-                <option value="6">Entre Rios</option>
-                <option value="7">Rosario</option>
-                <option value="8">Chubut</option>
+              ><select name="ciudad" id="city">
+                <option value="BsAs">Buenos Aires</option>
+                <option value="SJ">San Juan</option>
+                <option value="Cord">Cordoba</option>
+                <option value="Salta">Salta</option>
+                <option value="TF">Tierra del Fuego</option>
+                <option value="ER">Entre Rios</option>
+                <option value="Rosario">Rosario</option>
+                <option value="Chubut">Chubut</option>
               </select>
             </div>
           </div>
           <div>
-            <h4>Deseo Recibir Novedades y Ofertas</h4>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="inlineCheckbox1"
-                value="option1"
-              />
-              <label class="form-check-label" for="inlineCheckbox1">Si</label>
+            
+            <div class="checkbox">
+              <input type="checkbox" id="check"> <p>Deseo recibir novedades y ofertas</p>
             </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="inlineCheckbox2"
-                value="option2"
-              />
-              <label class="form-check-label" for="inlineCheckbox2">No</label>
-            </div>
+          
           </div>
           <div class="campo">
             <label for="">Comentarios: </label>
-            <textarea placeholder="deja tu comentario"></textarea>
+            <textarea placeholder="deja tu comentario" id="msj"></textarea>
           </div>
           <div>
-            <input class="button" onclick="EnviarFor()" type="submit" value="Enviar" />
-          </div>
+           
+          
         </form>
+        <input class="button" onclick="datosClientes()" type="submit" value="Enviar" />
+       
       </div>
     </main>
     <script src="validacion.js"></script>
