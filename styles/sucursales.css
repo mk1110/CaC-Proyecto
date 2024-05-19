@@ -27,7 +27,6 @@ nav{
     height: 100%;
     text-align:left;
 }
-
 i{
     display:flex;
     padding: 6px;
@@ -35,10 +34,9 @@ i{
     
 }
 main{
-    /* background-color: rgb(221, 133, 10); */
-    
+
     border: none;
-    font-family: "Nanum Gothic Coding", monospace;
+    font-family: "Rubik";
     font-weight: 400;
     font-style: normal;
     
@@ -47,7 +45,7 @@ main{
 }
 .barra{
     display: flex;
-    background-image: url(../img/fotonosotros.png);
+    background-image: url(../img/fotosucursales.png);
     background-repeat: no-repeat;
     background-size: cover; 
     height: 450px;
@@ -62,4 +60,31 @@ h1{
     width: auto;
     text-align: center;
     color:black;
+    
+}
+
+h2{
+    
+    border: none;
+    /* font-family: "Nanum Gothic Coding", monospace; */
+    font-weight: 1000;
+    font-style: normal;
+    
+    
+    
+   
+}
+
+
+
+li{
+    
+    border: none;
+    /* comento esto ya que en el head en donde estan los link se encuentran las fonts de google, se las agregue el otro dia a todas las paginas para que queden iguales, de todos modos si prefieren esta font habria que cambiar todas las paginas  */
+    /* font-family: "Nanum Gothic Coding", monospace; */ 
+    font-weight: 1000;
+    font-style: normal;
+    
+    
+   
 }
