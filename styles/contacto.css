@@ -141,4 +141,25 @@ footer a {
 
 }
 
-
+@media screen and (max-width: 767px) {
+    nav{
+        height: auto;
+    }
+    nav a{
+        display: flex;
+    }
+   
+   
+    .grid-contenedor {
+        display: block;
+ }
+ .navegador{
+    display: block;
+ }
+ .banner{
+    height: auto;
+    width: auto;
+    display: flex;
+ }
+ 
+}

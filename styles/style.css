@@ -106,12 +106,22 @@ footer a {
         height: auto;
     }
     nav a{
-        flex-direction:;
+        display: flex;
     }
    
    
     .grid-contenedor {
         display: block;
  }
+ .navegador{
+    display: block;
+ }
+ .banner{
+    height: auto;
+    width: auto;
+    display: flex;
+ }
+ select{ width: 100px;
+        height: 100px;}
 }
  
