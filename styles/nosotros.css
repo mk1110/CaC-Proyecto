@@ -63,3 +63,34 @@ h1{
     text-align: center;
     color:black;
 }
+
+@media screen and (max-width: 767px) {
+    nav{
+        height: auto;
+    }
+    nav a{
+        display: flex;
+    }
+   
+   
+    .grid-contenedor {
+        display: block;
+ }
+ .navegador{
+    display: block;
+ }
+ .banner{
+    height: auto;
+    width: auto;
+    display: flex;
+ }
+ #barra {
+    display: flex;
+    width: 25%;
+    height: 25%
+ }
+ 
+ h4{
+    text-align: center;
+ }
+}

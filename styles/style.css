@@ -116,10 +116,10 @@ footer a {
  .navegador{
     display: block;
  }
- .banner{
-    height: auto;
-    width: auto;
+ #banner{
     display: flex;
+    
+    
  }
  select{ width: 100px;
         height: 100px;}
