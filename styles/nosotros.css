@@ -2,7 +2,7 @@ nav{
     
     display: flex;
     justify-content:space-between; 
-    background-color:yellow;
+    background-color:rgb(255, 238, 0);
     /* background-size: 100%; */
     padding: 0px 60px; 
     height: 60px;
@@ -10,6 +10,12 @@ nav{
     align-items: center;
     /* gap: 20px; */
     
+}
+.navegador h1{
+    font-size: 18px;
+}
+nav p{
+    font-size: 18px;
 }
 
 .navegador a{
@@ -47,13 +53,11 @@ main{
 }
 .barra{
     display: flex;
-    background-image: url(../img/fotonosotros.png);
-    background-repeat: no-repeat;
+    background-image: url(../img/nosotros.png);
+    /* background-repeat: no-repeat; */
     background-size: cover; 
-    height: 450px;
+    height: 400px;
     background-position: center;
-    color: ghostwhite;
-    text-align: center;
     margin-top:15px ;
     
 }
@@ -79,15 +83,10 @@ h1{
  .navegador{
     display: block;
  }
- .banner{
-    height: auto;
-    width: auto;
+ 
+ .barra {
     display: flex;
- }
- #barra {
-    display: flex;
-    width: 25%;
-    height: 25%
+    
  }
  
  h4{

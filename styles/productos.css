@@ -7,7 +7,7 @@ nav{
     
     display: flex;
     justify-content:space-between; 
-    background-color:yellow;
+    background-color:rgb(255, 238, 0);
     padding: 0px 60px; 
     height: 60px;
     /* margin-bottom: 0px; */
@@ -26,6 +26,9 @@ nav{
     line-height: 60px;
     font-size: 18px;
 
+}
+.navegador h1{
+    font-size: 18px;
 }
 .titulo{
     width: 70%;
@@ -57,6 +60,9 @@ main{
     color: ghostwhite;
     text-align: center;
     
+}
+div{
+    display:block ;
 }
 h1{
     text-align: center;
@@ -109,3 +115,43 @@ li{
     
    
 }
+footer {
+    display: flex;
+    justify-content:space-around;
+    background-color: black;
+    padding: 15px 15px;
+}
+footer a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+   
+
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+    nav{
+        height: auto;
+    }
+    nav a{
+        display: flex;
+    }
+   
+   
+    .grid-contenedor {
+        display: block;
+ }
+ .navegador{
+    display: block;
+ }
+ div{
+    display: contents;
+ }
+ 
+ select{ width: 100px;
+        height: 100px;}
+
+
+}
+ 

@@ -3,7 +3,7 @@ nav{
     
     display: flex;
     justify-content:space-between; 
-    background-color:yellow;
+    background-color:rgb(255, 238, 0);
     /* background-size: 100%; */
     padding: 0px 60px; 
     height: 60px;
@@ -11,6 +11,9 @@ nav{
     align-items: center;
     /* gap: 20px; */
     
+}
+.navegador h1{
+    font-size: 18px;
 }
 
 .navegador a{
@@ -24,7 +27,11 @@ nav{
 }
 
 .navegador a:hover { background-color: black;
-    color: whitesmoke;}
+    color: whitesmoke;
+}
+nav p{
+    font-size: 18px;
+}
 
 .titulo{
     width: 100%;
@@ -48,10 +55,10 @@ main{
 }
 .barra{
     display: flex;
-    background-image: url(../img/fotocontacto.png);
-    background-repeat: no-repeat;
+    background-image: url(../img/contacto2.png);
+    /* background-repeat: no-repeat; Lo saque porque sino no se puede ver responsive */
     background-size: cover; 
-    height: 450px;
+    height: 400px;
     background-position: center;
     color: ghostwhite;
     text-align: center;
@@ -156,14 +163,9 @@ footer a {
  .navegador{
     display: block;
  }
- #banner{
-    height: auto;
-    width: auto;
-    display: flex;
- }
+
  .barra {
-    width: 80%;
-    height: 80%
+   display:flex ;
  }
  
  h2{
