@@ -1,0 +1,144 @@
+body{
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+}
+
+nav{
+    
+    display: flex;
+    justify-content:space-between; 
+    background-color:rgb(255, 238, 0);
+    padding: 0px 60px; 
+    height: 60px;
+    /* margin-bottom: 0px; */
+    align-items: center;
+    /* gap: 20px; */
+    
+}
+.navegador h1{
+    font-size: 18px;
+}
+nav p{
+    font-size: 18px;
+}
+.navegador a{
+  
+    display:flex;
+    text-decoration: none;
+    color:black;
+    line-height: 60px;
+    font-size: 18px;
+
+}
+
+
+#banner{
+    background-image: url("../img/pintureria\ siete\ colores\ \(1\).png");
+    background-size: cover;
+    height: 550px;
+    background-position: center;
+    margin-top: 15px;
+    
+}
+.marcas-productos{
+    margin: 20px 20px;
+}
+.titulo{
+    width: 100%;
+    height: 100%;
+    text-align:left;
+}
+.grid-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+}
+.contenedor{
+
+   display: flex;
+   /* justify-content: center; */
+   overflow: hidden;
+   position: relative;
+   width: 200px;
+   height: 300px;
+   /* margin-right: 40px; */
+   margin-bottom: 15px;
+  
+}
+
+.detail-img{
+   
+    width: 250px;
+    height: 250px;
+    /* margin: 30 5px; */
+    object-fit: cover;
+    
+    
+}
+.product-detail{
+    background-color: #e98bec;
+    position:absolute;
+    bottom: -100%;
+    width: 100%;
+    max-height: 100%;
+    transition: bottom 0.5s ease-in-out;
+}
+.product-text{
+    color: black;
+    margin: 5px 0px 0px 0px;
+    line-height: 1.2em;
+    text-align: center;
+    text-decoration: none;
+}
+.contenedor:hover{
+    opacity: 0.6;
+}
+.contenedor:hover .product-detail {
+    bottom: 0;
+}
+footer {
+    display: flex;
+    justify-content:space-around;
+    background-color: black;
+    padding: 15px 15px;
+}
+footer a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+   
+
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+    nav{
+        height: auto;
+    }
+    nav a{
+        display: flex;
+    }
+   
+   
+    .grid-contenedor {
+        display: block;
+ }
+ .navegador{
+    display: block;
+ }
+ #banner{
+    display: flex;
+    
+    
+ }
+ select{ width: 100px;
+        height: 100px;}
+}
+ 
+.formu {
+    border: 3px solid black;
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    display: flex
+    
+}
