@@ -68,4 +68,3 @@ const nuevaPeli = {
 
 agregarPeli(nuevaPeli); // Llama para agregar una nueva película
 */
-}
