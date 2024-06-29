@@ -32,69 +32,6 @@ nav p{
 }
 
 
-#banner{
-    background-image: url("../img/pintureria\ siete\ colores\ \(1\).png");
-    background-size: cover;
-    height: 550px;
-    background-position: center;
-    margin-top: 15px;
-    
-}
-.marcas-productos{
-    margin: 20px 20px;
-}
-.titulo{
-    width: 100%;
-    height: 100%;
-    text-align:left;
-}
-.grid-contenedor{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-}
-.contenedor{
-
-   display: flex;
-   /* justify-content: center; */
-   overflow: hidden;
-   position: relative;
-   width: 200px;
-   height: 300px;
-   /* margin-right: 40px; */
-   margin-bottom: 15px;
-  
-}
-
-.detail-img{
-   
-    width: 250px;
-    height: 250px;
-    /* margin: 30 5px; */
-    object-fit: cover;
-    
-    
-}
-.product-detail{
-    background-color: #e98bec;
-    position:absolute;
-    bottom: -100%;
-    width: 100%;
-    max-height: 100%;
-    transition: bottom 0.5s ease-in-out;
-}
-.product-text{
-    color: black;
-    margin: 5px 0px 0px 0px;
-    line-height: 1.2em;
-    text-align: center;
-    text-decoration: none;
-}
-.contenedor:hover{
-    opacity: 0.6;
-}
-.contenedor:hover .product-detail {
-    bottom: 0;
-}
 footer {
     display: flex;
     justify-content:space-around;
@@ -107,6 +44,31 @@ footer a {
     color: white;
    
 
+}
+#form{
+    width: 30%;
+    height: 60%;
+    margin-bottom: 25px;
+}
+.formu {
+    border: 3px solid black;
+    /* width: 50%;
+    height: 60%; */
+   justify-content:space-around;
+    margin-top:65px;
+    margin-bottom: 500px;
+    margin-left: 15px;
+    border-radius: 5px;
+    display: flex
+    
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input,button{
+    margin-top: 15px;;
+    border-radius: 5px;
 }
 
 /* CELULARES */
@@ -131,14 +93,10 @@ footer a {
     
  }
  select{ width: 100px;
-        height: 100px;}
+        height: 100px;
+    }
+.formu{
+display:flex;
+        }
 }
  
-.formu {
-    border: 3px solid black;
-    width: 50%;
-    height: 50%;
-    justify-content: center;
-    display: flex
-    
-}

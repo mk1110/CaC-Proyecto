@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="../styles/crud.css">
+
+    <link rel="icon" href="./img/7 C.png">
+    <script src="https://kit.fontawesome.com/3c809bfe13.js"crossorigin="anonymous"></script>
+    
+    
+    <title>Proyecto integrador</title>
+</head>
+<body>
+    <header>
+        <nav class="navegador">
+            <i
+            class="fa-solid fa-paint-roller fa-bounce"
+            style="color: #141414"></i><p>Pintureria Siete Colores</p>
+         
+        <!-- Nombre aleatorio se puede cambiar -->
+            <a href="../index.html">Inicio</a>
+          
+            <a href="./templates/contacto.html">Contactanos</a>
+           
+            <a href="./templates/nosotros.html">Sobre Nosotros</a>
+            
+            <a href="./templates/sucursales.html">Sucursales</a> 
+             
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Agregar Nuevo Producto</h1> <a href="../templates/alta_prod.html">Pintureria Siete colores</a>
+            <form id="IngresosForm">
+                <input type="hidden" id="productId" name="ProductoId"> <!-- Campo oculto para almacenar el ID de la película -->
+                <label for="name">Nombre del producto</label>
+                <input type="text" id="name" name="name" required >
+                
+                <label for="price">Precio</label>
+                <input type="number" id="price" name="price" required>
+
+                <label for="imagenProducto">Imagen del producto:</label> 
+                <input type="file" id="imagenProducto" name="imagen">
+
+                <button type="submit" id="btnSave">Agregar Producto</button>
+                <button type="button" id="cancelEdit">Cancelar</button>
+            </form>
+            <div id="message"></div>
+            <h2>Listado de Productos</h2>
+            <ul id="productList"></ul>
+            <script type="module" src="../crud-ingresos.js"></script>
+        </div>
+
+
+
+
+    </main>

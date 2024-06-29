@@ -33,9 +33,9 @@ nav p{
 
 
 #banner{
-    background-image: url("../img/pintureria\ siete\ colores\ \(1\).png");
+    background-image: url("../img/banner.png");
     background-size: cover;
-    height: 550px;
+    height: 500px;
     background-position: center;
     margin-top: 15px;
     
@@ -60,8 +60,8 @@ nav p{
    position: relative;
    width: 200px;
    height: 300px;
-   /* margin-right: 40px; */
-   margin-bottom: 15px;
+   margin-bottom: 20px;
+   margin-left: 75px;
   
 }
 
@@ -69,8 +69,8 @@ nav p{
    
     width: 250px;
     height: 250px;
-    /* margin: 30 5px; */
     object-fit: cover;
+    margin-top: 10px;
     
     
 }
@@ -81,20 +81,30 @@ nav p{
     width: 100%;
     max-height: 100%;
     transition: bottom 0.5s ease-in-out;
+    
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: "Rubik" ,sans-serif;
 }
 .product-text{
     color: black;
+    font-size: 15px;
+   
     margin: 5px 0px 0px 0px;
     line-height: 1.2em;
     text-align: center;
-    text-decoration: none;
+   
 }
-.contenedor:hover{
-    opacity: 0.6;
+
+ .contenedor:hover{
+    opacity: 0.9;
 }
 .contenedor:hover .product-detail {
     bottom: 0;
-}
+} 
 footer {
     display: flex;
     justify-content:space-around;
