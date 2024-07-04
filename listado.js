@@ -1,5 +1,5 @@
 // const API_MOVIES = 'https://api.themoviedb.org/3/movie/popular'
-// const API_MOVIES = 'http://localhost:5000/movies'
+const API_PINTURERIA = 'http://localhost:5000/producto'
 import { API_PINTURERIA  } from './config.js'
 
 const options = {
@@ -21,13 +21,13 @@ const obtenerProductos = async () => {
 
     // Iterar sobre cada producto y crear su elemento HTML
     for (let i = 0; i < productos.length; i++) {
-        // Crear el HTML para la película actual
+        // Crear el HTML para el producto actual
         const ProductoInsertar =`
           <div class="contenedor">
             
                 <img src="${API_PINTURERIA }./img/${productos[i].poster_url}"  alt="" class="detail-img">
                 <div class="product-detail">
-                    <a href="./templates/alba.html" ><p class="product-text" >${productos[i].name}</p><p class="product-text">${productos[i].price}</p></a> 
+                    <a href="./templates/alba.html" ><p class="product-text" >${productos[i].nombre}</p><p class="product-text">${productos[i].precio}</p></a> 
                 </div>
             </div>
            `  
@@ -35,7 +35,7 @@ const obtenerProductos = async () => {
         divContenedor.insertAdjacentHTML('beforeend', ProductoInsertar)
     }
     if (productos.length === 0) {
-        divContenedor.insertAdjacentHTML('beforeend', "<p>No hay peliculas en el sistema 😮</p>")
+        divContenedor.insertAdjacentHTML('beforeend', "<p>No hay productos en el sistema 😮</p>")
     }
 }
 
