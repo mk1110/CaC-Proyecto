@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/crud.css">
 
     <link rel="icon" href="./img/7 C.png">
@@ -36,13 +36,14 @@
     <main>
         <div class="container">
             <h1>Agregar Nuevo Producto</h1> <a href="../templates/alta_prod.html">Pintureria Siete colores</a>
-            <form id="IngresosForm">
-                <input type="hidden" id="productId" name="ProductoId"> <!-- Campo oculto para almacenar el ID de la película -->
-                <label for="name">Nombre del producto</label>
-                <input type="text" id="name" name="name" required >
+                <form id="IngresosForm" enctype="multipart/form-data"> 
+                <!-- <form id="IngresosForm"> -->
+                <input type="hidden" id="productoId" name="productoId"> <!-- Campo oculto para almacenar el ID de la película -->
+                <label for="nombre">Nombre del producto</label>
+                <input type="text" id="nombre" name="nombre" required >
                 
-                <label for="price">Precio</label>
-                <input type="number" id="price" name="price" required>
+                <label for="precio">Precio</label>
+                <input type="number" id="precio" name="precio" required>
 
                 <label for="imagenProducto">Imagen del producto:</label> 
                 <input type="file" id="imagenProducto" name="imagen">
@@ -53,10 +54,13 @@
             <div id="message"></div>
             <h2>Listado de Productos</h2>
             <ul id="productList"></ul>
-            <script type="module" src="../crud-ingresos.js"></script>
+           
         </div>
+        <script type="module" src="../crud-ingresos.js"></script>
 
 
 
 
     </main>
+    </body>
+    </html>
