@@ -1,6 +1,6 @@
 import { API_PINTURERIA } from './config.js';
 
- document.getElementById('IngresosForm').addEventListener('submit', function(event) {
+document.getElementById('IngresosForm').addEventListener('submit', function(event) {
   event.preventDefault();
 
   const productoId = document.getElementById('productoId').value; // Obtener el ID del producto (si está en modo edición)
@@ -36,17 +36,15 @@ import { API_PINTURERIA } from './config.js';
     document.getElementById('message').innerText = 'Error al agregar el producto.';
     console.error('Error:', error);
   });
-
 });
 
 
-
-  function loadProductos() {
+function loadProductos() {
   fetch(`${API_PINTURERIA }/producto`)
     .then(response => response.json())
     .then(data => {
-      const productList = document.getElementById('productList');
-      productList.innerHTML = ''; // Limpiar la lista existente
+      const productoList = document.getElementById('productoList');
+      productoList.innerHTML = ''; // Limpiar la lista existente
 
       data.forEach(producto => {
         const productoItem = document.createElement('li');
@@ -57,7 +55,7 @@ import { API_PINTURERIA } from './config.js';
             <button onclick="deleteProducto(${producto.id_producto})">Borrar</button>
           </div>
         `;
-        productList.appendChild( productoItem);
+        productoList.appendChild( productoItem);
       });
     })
     .catch(error => {
@@ -65,7 +63,7 @@ import { API_PINTURERIA } from './config.js';
     });
 }
 
-window.deleteProducto = (id) => {
+window.deleteMovie = (id) => {
   fetch(`${API_PINTURERIA }/producto/${id}`, {
     method: 'DELETE'
   })
@@ -87,7 +85,7 @@ window.editProducto = (id) => {
     .then(response => response.json())
     .then(producto => { /////ver el nombre si esta bien
       // Llenar el formulario con los datos de los productos
-      document.getElementById('productoId').value = producto.id_producto;
+      document.getElementById('productoId').value = movie.id_product;
       document.getElementById('nombre').value = producto.nombre;
       document.getElementById('precio').value = producto.precio;
       document.getElementById('btnSave').innerText = 'Guardar Cambios';
