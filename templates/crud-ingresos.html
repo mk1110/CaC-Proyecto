@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+
     <link rel="stylesheet" href="../styles/crud.css">
 
     <link rel="icon" href="./img/7 C.png">
@@ -47,7 +47,7 @@
                 <label for="imagenProducto">Imagen del producto:</label> 
                 <input type="file" id="imagenProducto" name="imagen">
 
-                <button type="submit" id="btnSave">Agregar Producto</button>
+                <button onclick="obtener() loadProductos()" type="submit" id="btnSave">Agregar Producto</button>
                 <button type="button" id="cancelEdit">Cancelar</button>
             </form>
             <div id="message"></div>

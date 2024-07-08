@@ -1,5 +1,5 @@
 import { API_PINTURERIA } from './config.js';
-
+function obtener(){
 document.getElementById('IngresosForm').addEventListener('submit', function(event) {
   event.preventDefault();
 
@@ -37,7 +37,7 @@ document.getElementById('IngresosForm').addEventListener('submit', function(even
     console.error('Error:', error);
   });
 });
-
+}
 
 function loadProductos() {
   fetch(`${API_PINTURERIA }/producto`)
