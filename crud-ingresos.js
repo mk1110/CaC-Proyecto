@@ -63,7 +63,7 @@ function loadProductos() {
     });
 }
 
-window.deleteMovie = (id) => {
+window.deleteProductos = (id) => {
   fetch(`${API_PINTURERIA }/producto/${id}`, {
     method: 'DELETE'
   })
