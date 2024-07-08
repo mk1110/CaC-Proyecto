@@ -1,5 +1,5 @@
 // const API_MOVIES = 'https://api.themoviedb.org/3/movie/popular'
-const API_PINTURERIA = 'http://localhost:5000/producto'
+const API_PINTURERIA = 'http://localhost:5502/producto'
 import { API_PINTURERIA  } from './config.js'
 
 const options = {
@@ -11,10 +11,10 @@ const options = {
 }
 
 const obtenerProductos = async () => {
-    const resultado = await fetch(`${ API_PINTURERIA}/product`, options)
+    const resultado = await fetch(`${ API_PINTURERIA}/producto`, options)
     const data = await resultado.json()
 
-    const pelis = data
+    const productos = data
     console.log(productos)
      // Seleccionar el contenedor donde se mostrarán los productos
     let divContenedor = document.querySelector('.contenedor')
