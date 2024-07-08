@@ -1,5 +1,5 @@
 import { API_PINTURERIA } from './config.js';
-function obtener(){
+//function obtener(){
 document.getElementById('IngresosForm').addEventListener('submit', function(event) {
   event.preventDefault();
 
@@ -13,7 +13,7 @@ document.getElementById('IngresosForm').addEventListener('submit', function(even
   formData.append('precio',precio);
   formData.append('imagen', imagen);
 
-  let url = `${API_PINTURERIA }/producto`;//Hay que ver el nombre
+  let url = `${API_PINTURERIA}/product`;//Hay que ver el nombre
   let method = 'POST';
 
   if (productoId) {
@@ -37,10 +37,10 @@ document.getElementById('IngresosForm').addEventListener('submit', function(even
     console.error('Error:', error);
   });
 });
-}
+
 
 function loadProductos() {
-  fetch(`${API_PINTURERIA }/producto`)
+  fetch(`${API_PINTURERIA}/product`)
     .then(response => response.json())
     .then(data => {
       const productoList = document.getElementById('productoList');
@@ -64,7 +64,7 @@ function loadProductos() {
 }
 
 window.deleteProductos = (id) => {
-  fetch(`${API_PINTURERIA }/producto/${id}`, {
+  fetch(`${API_PINTURERIA}/product/${id}`, {
     method: 'DELETE'
   })
   .then(response => response.json())
@@ -81,7 +81,7 @@ window.deleteProductos = (id) => {
 // Usar función flecha para editar el producto y asignarle al objeto window
 window.editProducto = (id) => {
   // Obtener el producto por su ID y cargar los datos en el formulario
-  fetch(`${API_PINTURERIA }/producto/${id}`)
+  fetch(`${API_PINTURERIA}/product/${id}`)
     .then(response => response.json())
     .then(producto => { /////ver el nombre si esta bien
       // Llenar el formulario con los datos de los productos

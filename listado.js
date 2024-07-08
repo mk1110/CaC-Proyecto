@@ -1,17 +1,17 @@
 // const API_MOVIES = 'https://api.themoviedb.org/3/movie/popular'
-const API_PINTURERIA = 'http://localhost:5502/producto'
-import { API_PINTURERIA  } from './config.js'
+// const API_PINTURERIA = 'http://localhost:5000'
+import {API_PINTURERIA} from './config'
 
 const options = {
     method: 'GET', 
     headers: {
         accept: 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MTI2ZDgzMDU2NjMzNmJhNmU4Mzc2NGIyZjZiZmI2MSIsInN1YiI6IjY1Y2U2NDA0MTNhMzg4MDE4NzlmNjBmOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tZTxSjr1fLqIi2LSwadmPT37grY2IF6y3d4LUHLbEmE'
+        // Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MTI2ZDgzMDU2NjMzNmJhNmU4Mzc2NGIyZjZiZmI2MSIsInN1YiI6IjY1Y2U2NDA0MTNhMzg4MDE4NzlmNjBmOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tZTxSjr1fLqIi2LSwadmPT37grY2IF6y3d4LUHLbEmE'
     }
 }
 
 const obtenerProductos = async () => {
-    const resultado = await fetch(`${ API_PINTURERIA}/producto`, options)
+    const resultado = await fetch(`${API_PINTURERIA}/product`,options)
     const data = await resultado.json()
 
     const productos = data
@@ -24,10 +24,10 @@ const obtenerProductos = async () => {
         // Crear el HTML para el producto actual
         const ProductoInsertar =`
           <div class="contenedor">
-            
-                <img src="${API_PINTURERIA }./img/${productos[i].poster_url}"  alt="" class="detail-img">
+                 <a href="index.html" target="_blank">
+                <img src="${API_PINTURERIA}.img/${productos[i].poster_url}"  alt="" class="detail-img">
                 <div class="product-detail">
-                    <a href="./templates/alba.html" ><p class="product-text" >${productos[i].nombre}</p><p class="product-text">${productos[i].precio}</p></a> 
+                    <a href="." ><p class="product-text" >${productos[i].nombre}</p><p class="product-text">${productos[i].precio}</p></a> 
                 </div>
             </div>
            `  
