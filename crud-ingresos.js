@@ -1,5 +1,4 @@
-import { API_PINTURERIA } from './config.js';
-//function obtener(){
+import {API_PINTURERIA} from './config.js';
 document.getElementById('IngresosForm').addEventListener('submit', function(event) {
   event.preventDefault();
 
@@ -23,8 +22,8 @@ document.getElementById('IngresosForm').addEventListener('submit', function(even
 
   }
 
-  fetch(url, {
-    method: method,
+  fetch(`${API_PINTURERIA}/product`, {
+    method: 'POST',
     body: formData
   })
   .then(response => response.json())
@@ -36,7 +35,7 @@ document.getElementById('IngresosForm').addEventListener('submit', function(even
     document.getElementById('message').innerText = 'Error al agregar el producto.';
     console.error('Error:', error);
   });
-});
+})
 
 
 function loadProductos() {
@@ -109,7 +108,7 @@ const clearForm = () => {
 };
 
 // Cancelar la edición y limpiar el formulario al hacer clic en "Cancelar"
-document.getElementById('cancelEdit').addEventListener('click', clearForm);
+document.getElementById('cancelEdit').addEventListener('click', clearForm());
 
 // Cargar los productos cuando la página se cargue por primera vez
-document.addEventListener('DOMContentLoaded', loadProductos);
+document.addEventListener('DOMContentLoaded', loadProductos());

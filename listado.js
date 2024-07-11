@@ -5,7 +5,7 @@ import {API_PINTURERIA} from './config'
 const options = {
     method: 'GET', 
     headers: {
-        accept: 'application/json',
+      //  accept: 'application/json',
         // Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MTI2ZDgzMDU2NjMzNmJhNmU4Mzc2NGIyZjZiZmI2MSIsInN1YiI6IjY1Y2U2NDA0MTNhMzg4MDE4NzlmNjBmOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tZTxSjr1fLqIi2LSwadmPT37grY2IF6y3d4LUHLbEmE'
     }
 }
@@ -17,7 +17,7 @@ const obtenerProductos = async () => {
     const productos = data
     console.log(productos)
      // Seleccionar el contenedor donde se mostrarán los productos
-    let divContenedor = document.querySelector('.contenedor')
+    let divlist = document.querySelector('#list')
 
     // Iterar sobre cada producto y crear su elemento HTML
     for (let i = 0; i < productos.length; i++) {
@@ -32,7 +32,7 @@ const obtenerProductos = async () => {
             </div>
            `  
         // Insertar el HTML de los productos en el contenedor
-        divContenedor.insertAdjacentHTML('beforeend', ProductoInsertar)
+        divlist.insertAdjacentHTML('beforeend', ProductoInsertar)
     }
     if (productos.length === 0) {
         divContenedor.insertAdjacentHTML('beforeend', "<p>No hay productos en el sistema 😮</p>")
@@ -40,7 +40,7 @@ const obtenerProductos = async () => {
 }
 
 //ESTO LO COPIE PORQUE NO ME ACUERDO SI TAMBIEN VA, LO DEJO ASI DESPUES SE MODIFICA SI LO NECESITAMOS
-obtenerPelis()
+
 
 /*
 const agregarPeli = async (newMovie) => {
