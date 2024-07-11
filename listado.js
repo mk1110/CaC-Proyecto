@@ -25,7 +25,7 @@ const obtenerProductos = async () => {
         const ProductoInsertar =`
           <div class="contenedor">
                  <a href="index.html" target="_blank">
-                <img src="${API_PINTURERIA}.img/${productos[i].poster_url}"  alt="" class="detail-img">
+                <img src="${API_PINTURERIA}/static/img/${productos[i].poster_url}"  alt="" class="detail-img">
                 <div class="product-detail">
                     <a href="." ><p class="product-text" >${productos[i].nombre}</p><p class="product-text">${productos[i].precio}</p></a> 
                 </div>

@@ -22,8 +22,8 @@ document.getElementById('IngresosForm').addEventListener('submit', function(even
 
   }
 
-  fetch(`${API_PINTURERIA}/product`, {
-    method: 'POST',
+  fetch(url, {
+    method: method,
     body: formData
   })
   .then(response => response.json())
@@ -54,12 +54,12 @@ function loadProductos() {
             <button onclick="deleteProducto(${producto.id_producto})">Borrar</button>
           </div>
         `;
-        productoList.appendChild( productoItem);
+        productoList.appendChild(productoItem);
       });
     })
-    .catch(error => {
-      console.error('Error al cargar los productos:', error);
-    });
+    .catch( error => {
+      console.error('Error al cargar los productos:',error);
+ } );
 }
 
 window.deleteProductos = (id) => {
@@ -108,7 +108,7 @@ const clearForm = () => {
 };
 
 // Cancelar la edición y limpiar el formulario al hacer clic en "Cancelar"
-document.getElementById('cancelEdit').addEventListener('click', clearForm());
+document.getElementById('cancelEdit').addEventListener('click', clearForm);
 
 // Cargar los productos cuando la página se cargue por primera vez
-document.addEventListener('DOMContentLoaded', loadProductos());
+document.addEventListener('DOMContentLoaded', loadProductos);
