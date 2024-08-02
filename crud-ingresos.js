@@ -12,7 +12,7 @@ document.getElementById('IngresosForm').addEventListener('submit', function(even
   formData.append('precio',precio);
   formData.append('imagen', imagen);
 
-  let url = `${API_PINTURERIA}/product`;//Hay que ver el nombre
+  let url = `${API_PINTURERIA}/producto`;//Hay que ver el nombre
   let method = 'POST';
 
   if (productoId) {
@@ -39,7 +39,7 @@ document.getElementById('IngresosForm').addEventListener('submit', function(even
 
 
 function loadProductos() {
-  fetch(`${API_PINTURERIA}/product`)
+  fetch(`${API_PINTURERIA}/producto`)
     .then(response => response.json())
     .then(data => {
       const productoList = document.getElementById('productoList');
